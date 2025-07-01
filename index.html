@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p.css">
+   <script src="https://kit.fontawesome.com/cc4cbfd079.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="user-form">
+      <div class="header">
+        <p>Tic Tac Toe</p>
+      </div>
+      <div id="form-fields">
+        <div class="player">
+          <label for="player-1">Player1 Name:-</label>
+          <input type="text" id="player-1"/>
+        </div>
+        <div class="player">
+          <label for="player-2">Player2 Name:-</label>
+          <input type="text" id="player-2"/>
+        </div>
+        <div class="start">
+          <button id="start" onclick="showHide()">Start Game</button>
+          <button id="startwn" onclick="showHide()">Start without name</button>
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="game">
+      <div id="score">
+        <div class="score1">
+          <img src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Free-Download.png" alt="profile" >
+          <span id="player1">X</span>
+          <div class="box1">0</div>
+        </div>
+        <img src="https://png.pngtree.com/png-clipart/20230106/original/pngtree-luxury-vs-versus-logos-png-image_8876120.png" alt="vs" />
+        <div class="score2">
+          <img src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Free-Download.png" alt="profile" >
+          <span id="player2">O</span>
+          <div class="box2">0</div>
+        </div>
+      </div>
+      <div id="mainbox">
+        <div class="row1">
+          <div class="container" id="0"></div>
+          <div class="container" id="1"></div>
+          <div class="container" id="2"></div>
+          <div class="container" id="3"></div>
+          <div class="container" id="4"></div>
+          <div class="container" id="5"></div>
+          <div class="container" id="6"></div>
+          <div class="container" id="7"></div>
+          <div class="container" id="8"></div>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn2"onclick="reset()">
+          <img src="https://cdn-icons-png.flaticon.com/512/5632/5632370.png" alt="reset" />
+        </button>
+        <button class="btn1"onclick="restart()">Restart</button>
+        <button class="btn3"onclick="reset()">
+          <img src="https://cdn-icons-png.flaticon.com/512/5632/5632370.png" alt="reset" />
+        </button>
+      </div>
+      <div id="winner">
+      <button id="close">&times;</button>
+      <h1></h1>
+    </div>
+    <div id="player_turns">
+      <span id="player_1"></span>
+      <span id="player_2"></span>
+    </div>
+    </div>
+
+   
+  </div>
+    
+    
+    <script src="p.js"></script>
+  </body>
+</html>
